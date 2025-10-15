@@ -33,6 +33,7 @@ EC2 Instance	            Ubuntu-based web server running Apache2
 When the EC2 instance is created, the following script runs automatically:
 
 #!/bin/bash
+
 sudo apt update
 
 sudo apt install apache2 -y
