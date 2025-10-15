@@ -121,15 +121,14 @@ resource "aws_instance" "webdev-instance" {
     network_interface_id = aws_network_interface.Dev-vm-nic1.id
   }
   
-
-  user_data = <<EOF
+  user_data = <<'EOF'
     #!/bin/bash
-    sudo apt update
-    sudo apt install apache2 -y
-    sudo systemctl enable apache2
-    sudo systemctl start spache2
-    sudo bash -c 'echo Project Success!! >> /var/www/html/index.html'
-  EOF
+    set -e
+    (yum -y update || dnf -y update)
+    (yum -y install httpd || dnf -y install httpd)
+    systemctl enable --now httpd
+    echo 'Project Success!!' > /var/www/html/index.html
+    EOF
 
   tags = {
     Name = "Development Web Server"
