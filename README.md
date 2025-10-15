@@ -57,19 +57,19 @@ An existing Key Pair in your AWS region (update the key name in the code → key
 Clone the repository
 git clone https://github.com/your-username/terraform-aws-vpc-webserver.git
 
-cd terraform-aws-vpc-webserver
+*cd terraform-aws-vpc-webserver*
 
 ### Initialize Terraform:
-terraform init
+*terraform init*
 
 ### Preview the changes:
-terraform plan
+*terraform plan*
 
 ### Apply the configuration:
-terraform apply --auto-approve
+*terraform apply --auto-approve*
 
 ### Get the public IP:
-terraform output
+*terraform output*
 
 ### Access your web server
 Open a browser and visit:
@@ -77,7 +77,7 @@ http://<your-elastic-ip>
 
 ### 🧹 Cleanup
 To avoid incurring AWS charges, destroy the infrastructure when done:
-terraform destroy
+**terraform destroy
 
 ### 🧠 Notes
 
