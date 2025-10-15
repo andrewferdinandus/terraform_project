@@ -54,16 +54,16 @@ Clone the repository
 git clone https://github.com/your-username/terraform-aws-vpc-webserver.git
 cd terraform-aws-vpc-webserver
 
-Initialize Terraform
+Initialize Terraform:
 terraform init
 
-Preview the changes
+Preview the changes:
 terraform plan
 
-Apply the configuration
+Apply the configuration:
 terraform apply --auto-approve
 
-Get the public IP
+Get the public IP:
 terraform output
 
 Access your web server
