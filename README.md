@@ -56,6 +56,7 @@ An existing Key Pair in your AWS region (update the key name in the code → key
 ### ⚡ How to Use
 Clone the repository
 git clone https://github.com/your-username/terraform-aws-vpc-webserver.git
+
 cd terraform-aws-vpc-webserver
 
 ### Initialize Terraform:
