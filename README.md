@@ -89,6 +89,6 @@ You can adjust subnet CIDRs, region, or instance type as per your environment.
 📘 Author
 
 Andrew Ferdinandus
-Senior Linux & DevOps Engineer
-🔗 LinkedIn | 🌏 GitHub
+Senior Linux Engineer
+https://www.linkedin.com/in/andrew-ferdinandus/
 
