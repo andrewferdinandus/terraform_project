@@ -116,7 +116,7 @@ resource "aws_instance" "webdev-instance" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1b"
   key_name = "dev-web"
-  primary_network_interface {
+  network_interface {
     device_index = 0
     network_interface_id = aws_network_interface.Dev-vm-nic1.id
   }
