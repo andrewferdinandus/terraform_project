@@ -77,7 +77,7 @@ http://<your-elastic-ip>
 
 ### 🧹 Cleanup
 To avoid incurring AWS charges, destroy the infrastructure when done:
-**terraform destroy
+*terraform destroy*
 
 ### 🧠 Notes
 
