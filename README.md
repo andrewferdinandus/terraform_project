@@ -34,10 +34,15 @@ When the EC2 instance is created, the following script runs automatically:
 
 #!/bin/bash
 sudo apt update
+
 sudo apt install apache2 -y
+
 sudo systemctl enable apache2
+
 sudo systemctl start apache2
+
 sudo bash -c 'echo Project Success!! >> /var/www/html/index.html'
+
 
 It installs Apache, enables it on boot, and creates a test web page at /var/www/html/index.html.
 
