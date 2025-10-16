@@ -20,3 +20,14 @@ Application Load Balancer (ALB) – Distributes web traffic across application i
 EC2 Instances – Application servers deployed in multiple Availability Zones.
 
 RDS (MySQL) – Managed relational database hosted in private subnets.
+
+## 📂 Repository Structure
+terraform_project/
+├── provider.tf           # AWS provider configuration
+├── vpc.tf                # VPC definition
+├── subnets.tf            # Public & private subnets and DB subnet group
+├── security_groups.tf    # Security group definitions
+├── variables.tf          # Input variables with defaults
+├── instances.tf          # Application instances & RDS resources
+├── output.tf             # Outputs such as ALB DNS name
+└── userdata.sh           # User data script for EC2 configuration
