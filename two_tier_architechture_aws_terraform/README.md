@@ -51,3 +51,17 @@ All configuration parameters (AMI, instance type, subnets, etc.) are controlled 
 
 ### ✅ Automated Deployment
 EC2 instances use user_data.sh for automatic package installation and startup configuration.
+
+🔧 Prerequisites
+
+### Before deploying, ensure you have:
+
+- AWS credentials configured (via AWS CLI or environment variables)
+- SSH key pair created in your AWS account (matches the key_name variable)
+
+## 🚀 Deployment Steps
+### 1️⃣ Clone the repository
+```text
+git clone https://github.com/andrewferdinandus/terraform_project.git
+cd terraform_project
+```
