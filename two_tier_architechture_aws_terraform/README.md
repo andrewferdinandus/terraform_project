@@ -121,14 +121,9 @@ When finished testing, destroy all resources to avoid ongoing AWS costs:
 terraform destroy
 ```
 
-### 👤 Author
-
-Andrew Ferdinandus
-
-💻 Senior Linux / Systems Engineer
-
-📍 New Zealand
-
-🔗 [GitHub Profile](https://github.com/andrewferdinandus)  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/andrew-ferdinandus/)
+## 👤 Author
+**Andrew Ferdinandus** <br>
+💻 Senior Linux / Systems Engineer <br>
+📍 New Zealand <br>
+🔗 [GitHub Profile](https://github.com/andrewferdinandus)  |  [LinkedIn](https://www.linkedin.com/in/andrew-ferdinandus/)
 
