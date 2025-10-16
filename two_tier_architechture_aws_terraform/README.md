@@ -87,3 +87,11 @@ terraform apply
 ```
 
 Confirm with yes when prompted.
+
+### 🔐 Security Group Rules Summary
+| Security Group | Description           | Inbound                                | Outbound |
+| -------------- | --------------------- | -------------------------------------- | -------- |
+| **LBR**        | ALB security group    | 80, 443 from 0.0.0.0/0                 | All      |
+| **App**        | Application server SG | 80, 443 from LBR SG; 22 (SSH) optional | All      |
+| **DB**         | Database SG           | 3306 from App SG                       | All      |
+
