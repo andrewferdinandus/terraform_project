@@ -22,6 +22,7 @@ EC2 Instances – Application servers deployed in multiple Availability Zones.
 RDS (MySQL) – Managed relational database hosted in private subnets.
 
 ## 📂 Repository Structure
+```text
 terraform_project/              ← main folder name (your repo)
 ├── provider.tf                 ← defines AWS provider settings
 ├── vpc.tf                      ← creates the VPC
@@ -33,4 +34,4 @@ terraform_project/              ← main folder name (your repo)
 ├── userdata.sh                 ← script that installs Apache on EC2
 └── docs/                       ← folder holding documentation
     └── aws-two-tier-architecture.png ← your AWS architecture image
-
+```
