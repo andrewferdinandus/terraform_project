@@ -88,10 +88,30 @@ terraform apply
 
 Confirm with yes when prompted.
 
-### 🔐 Security Group Rules Summary
+### 🔐 Security Group Rules Summary (I have used both ports in LBR, use one according to your requirement
 | Security Group | Description           | Inbound                                | Outbound |
 | -------------- | --------------------- | -------------------------------------- | -------- |
 | **LBR**        | ALB security group    | 80, 443 from 0.0.0.0/0                 | All      |
 | **App**        | Application server SG | 80, 443 from LBR SG; 22 (SSH) optional | All      |
 | **DB**         | Database SG           | 3306 from App SG                       | All      |
+
+
+### 🧩 Variables
+| Variable               | Description                                  | Default                          |
+| ---------------------- | -------------------------------------------- | -------------------------------- |
+| `region`               | AWS Region                                   | `us-east-1`                      |
+| `vpc_cidr_block`       | VPC CIDR range                               | `10.0.0.0/16`                    |
+| `public_subnet_cidrs`  | List of public subnet CIDRs                  | `["10.0.1.0/24", "10.0.2.0/24"]` |
+| `private_subnet_cidrs` | List of private subnet CIDRs                 | `["10.0.3.0/24", "10.0.4.0/24"]` |
+| `azs`                  | Availability Zones                           | `["us-east-1a", "us-east-1b"]`   |
+| `instance_cfg`         | AMI, instance type, name, SSH key, user data | Object                           |
+| `app_lb`               | ALB configuration                            | Object                           |
+| `db_master_password`   | MySQL root password                          | Sensitive input                  |
+
+
+### 📤 Outputs
+```text
+Outputs:
+lb_dns_name = #### "load_balancer_dns_name" ####
+```
 
