@@ -32,6 +32,5 @@ terraform_project/              ← main folder name (your repo)
 ├── instances.tf                ← EC2 + RDS resource definitions
 ├── output.tf                   ← prints outputs (like ALB DNS)
 ├── userdata.sh                 ← script that installs Apache on EC2
-└── docs/                       ← folder holding documentation
-    └── aws-two-tier-architecture.png ← your AWS architecture image
+
 ```
