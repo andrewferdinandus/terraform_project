@@ -65,3 +65,25 @@ EC2 instances use user_data.sh for automatic package installation and startup co
 git clone https://github.com/andrewferdinandus/terraform_project.git
 cd terraform_project
 ```
+
+### 2️⃣ Initialize Terraform
+```text
+terraform init
+```
+
+### 3️⃣ Validate configuration
+```test
+terraform validate
+```
+
+### 4️⃣ Review the plan and it will promt for the db password
+```text
+terraform plan
+```
+
+### 5️⃣ Apply changes and it will promt for the db password
+```text
+terraform apply
+```
+
+Confirm with yes when prompted.
