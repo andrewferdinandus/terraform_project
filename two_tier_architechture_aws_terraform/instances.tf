@@ -3,7 +3,7 @@ locals {
 }
 
 resource "aws_instance" "app_servers" {
-    count                       = length(local.app_subnets)
+    count           = length(local.app_subnets)
     ami             = var.instance_cfg.ami
     instance_type   = var.instance_cfg.instance_type
     subnet_id       = local.app_subnets[count.index]
