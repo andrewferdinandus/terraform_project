@@ -34,3 +34,20 @@ terraform_project/              ← main folder name (your repo)
 ├── userdata.sh                 ← script that installs Apache on EC2
 
 ```
+
+## ⚙️ Features
+
+### ✅ Modular & Scalable Design
+Easily extendable for multiple environments (e.g., dev, stage, prod).
+
+### ✅ Secure Networking
+Traffic is allowed only between tiers through security groups.
+
+### ✅ High Availability
+Public and private subnets are distributed across multiple AZs.
+
+### ✅ Parameter-Driven
+All configuration parameters (AMI, instance type, subnets, etc.) are controlled via variables.
+
+### ✅ Automated Deployment
+EC2 instances use user_data.sh for automatic package installation and startup configuration.
