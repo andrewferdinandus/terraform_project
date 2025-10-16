@@ -112,6 +112,18 @@ Confirm with yes when prompted.
 ### 📤 Outputs
 ```text
 Outputs:
-lb_dns_name = #### "load_balancer_dns_name" ####
+lb_dns_name = "load_balancer_dns_name"
 ```
 
+### 🧹 Clean Up
+When finished testing, destroy all resources to avoid ongoing AWS costs:
+```text
+terraform destroy
+```
+
+### 👤 Author
+Andrew Ferdinandus
+💻 Senior Linux / Systems Engineer
+📍 New Zealand
+🔗 [GitHub Profile](https://github.com/andrewferdinandus)  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/andrew-ferdinandus/)
