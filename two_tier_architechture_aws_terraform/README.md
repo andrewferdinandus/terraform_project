@@ -22,12 +22,15 @@ EC2 Instances – Application servers deployed in multiple Availability Zones.
 RDS (MySQL) – Managed relational database hosted in private subnets.
 
 ## 📂 Repository Structure
-terraform_project/
-├── provider.tf           # AWS provider configuration
-├── vpc.tf                # VPC definition
-├── subnets.tf            # Public & private subnets and DB subnet group
-├── security_groups.tf    # Security group definitions
-├── variables.tf          # Input variables with defaults
-├── instances.tf          # Application instances & RDS resources
-├── output.tf             # Outputs such as ALB DNS name
-└── userdata.sh           # User data script for EC2 configuration
+terraform_project/              ← main folder name (your repo)
+├── provider.tf                 ← defines AWS provider settings
+├── vpc.tf                      ← creates the VPC
+├── subnets.tf                  ← creates public/private subnets & DB subnet group
+├── security_groups.tf          ← defines security rules between tiers
+├── variables.tf                ← input variables for Terraform
+├── instances.tf                ← EC2 + RDS resource definitions
+├── output.tf                   ← prints outputs (like ALB DNS)
+├── userdata.sh                 ← script that installs Apache on EC2
+└── docs/                       ← folder holding documentation
+    └── aws-two-tier-architecture.png ← your AWS architecture image
+
