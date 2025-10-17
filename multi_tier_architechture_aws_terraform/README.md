@@ -3,6 +3,8 @@
 This project demonstrates how to deploy a **highly available and scalable three-tier architecture** on **AWS** using **Terraform**.  
 It automates the provisioning of networking, compute, security, load balancing, and database layers across multiple Availability Zones (AZs).
 
+
+![AWS Multi-Tier Terraform Architecture](Multi_Tier_Architechture.png)
 ---
 
 ## 🏗️ Architecture Summary
