@@ -1,5 +1,6 @@
 # --- Terraform junk to ignore ---
 # Local state
+.terraform.lock.hcl
 *.tfstate
 *.tfstate.*
 crash.log
