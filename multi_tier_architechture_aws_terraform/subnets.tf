@@ -1,13 +1,3 @@
-#Main VPC Subnet
-resource "aws_subnet" "main_vpc_subnet" {
-  vpc_id     = aws_vpc.multi_tier.id
-  cidr_block = var.vpc_cidr_block
-
-  tags = {
-    Name = var.main_vpc.name
-  
-  }
-}
 
 locals {
   public_web_defs = {
