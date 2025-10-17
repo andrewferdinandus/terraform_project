@@ -122,3 +122,11 @@ This diagram illustrates traffic flow from the Internet → External ALB → Web
 ✅ RDS MySQL with private endpoint
 
 ✅ Reusable modular Terraform design
+
+
+## 👤 Author
+**Andrew Ferdinandus** <br>
+💻 Senior Linux / Systems Engineer <br>
+📍 New Zealand <br>
+🔗 [GitHub Profile](https://github.com/andrewferdinandus)  |  [LinkedIn](https://www.linkedin.com/in/andrew-ferdinandus/)
+
