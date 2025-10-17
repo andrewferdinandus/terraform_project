@@ -102,3 +102,23 @@ terraform destroy
 | **Public Web Subnets**  | `10.0.1.0/24`, `10.0.2.0/24` | Web Tier                |
 | **Private App Subnets** | `10.0.3.0/24`, `10.0.4.0/24` | App Tier                |
 | **Private DB Subnets**  | `10.0.5.0/24`, `10.0.6.0/24` | Database Tier           |
+
+
+## 📊 Architecture Visualization
+This diagram illustrates traffic flow from the Internet → External ALB → Web Tier → Internal ALB → App Tier → Database Subnet Group (RDS).
+
+## 🚀 Key Highlights
+
+✅ Fully automated multi-AZ deployment
+
+✅ Tiered security group model
+
+✅ Private subnets with NAT gateways
+
+✅ Launch Templates + Auto Scaling Groups
+
+✅ Dual load balancers (External + Internal)
+
+✅ RDS MySQL with private endpoint
+
+✅ Reusable modular Terraform design
